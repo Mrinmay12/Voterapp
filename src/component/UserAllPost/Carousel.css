@@ -1,0 +1,279 @@
+.darksoul-container
+{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.darksoul-cards-carousel
+{
+    width: 1000px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.darksoul-cards-carousel-bg
+{
+    width: 1000px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    display: flex;
+    overflow: hidden;
+}
+.darksoul-cards-carousel-content
+{
+    width: 600px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#jscarousel-darksoul-cards-carousel-item-1
+{
+    margin: auto;
+    margin-left: 20px;
+    min-width: 150px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: #e1ecc8;
+    position: relative;
+}
+#jscarousel-darksoul-cards-carousel-item-2
+{
+    margin: auto;
+    min-width: 150px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: #FDCEDF;
+    position: relative;
+}
+
+#jscarousel-darksoul-cards-carousel-item-3
+{
+    margin: auto;
+    min-width: 150px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: #9BABB8;
+    position: relative;
+}
+#jscarousel-darksoul-cards-carousel-item-4
+{
+    margin: auto;
+    min-width: 150px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: #B2A4FF;
+    position: relative;
+}
+#jscarousel-darksoul-cards-carousel-item-5
+{
+    margin: auto;
+    min-width: 150px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(189, 189, 189);
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: #93bfcf;
+    position: relative;
+}
+.darksoul-btn-prev
+{
+    margin: auto;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+}
+.darksoul-btn-prev:hover
+{
+    transform: scale(1.2);
+    transition-duration: 0.7s;
+}
+.darksoul-btn-next
+{
+    margin: auto;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+}
+.darksoul-btn-next:hover 
+{
+    transform: scale(1.2);
+    transition-duration: 0.7s;
+}
+.darksoul-cards-carousel-buttons
+{
+    margin: auto;
+}
+
+/* LEFT HALF */
+@keyframes prev 
+{
+    0%
+    {
+        right: 0px; 
+    }
+    100%
+    {
+        right:  200px;
+    }
+    
+}
+@keyframes prev1 
+{
+    0%
+    {
+        right: 200px; 
+    }
+    100%
+    {
+        right:  400px;
+    }
+    
+}
+@keyframes prev2 
+{
+    0%
+    {
+        right: 400px; 
+    }
+    100%
+    {
+        right:  600px;
+    }
+    
+}
+
+@keyframes next-1 
+{
+    0%
+    {
+        left: -200px;
+    }
+    100%
+    {
+        left: 0px;
+    }
+    
+}
+@keyframes next-2 
+{
+    0%
+    {
+        left: -400px;
+    }
+    100%
+    {
+        left: -200px;
+    }
+    
+}
+@keyframes next-3 
+{
+    0%
+    {
+        left: -600px;
+    }
+    100%
+    {
+        left: -400px;
+    }
+    
+}
+
+/* RIGHT SIDE */
+@keyframes next 
+{
+    0%
+    {
+        left: 0px;
+    }
+    100%
+    {
+        left: 200px;
+    }
+    
+}
+@keyframes next1 
+{
+    0%
+    {
+        left: 200px;
+    }
+    100%
+    {
+        left: 400px;
+    }
+    
+}
+@keyframes next2 
+{
+    0%
+    {
+        left: 400px;
+    }
+    100%
+    {
+        left: 600px;
+    }
+    
+}
+@keyframes prev-1 
+{
+    0%
+    {
+        right: -200px; 
+    }
+    100%
+    {
+        right:  0px;
+    }
+    
+}
+@keyframes prev-2 
+{
+    0%
+    {
+        right: -400px; 
+    }
+    100%
+    {
+        right: -200px;
+    }
+    
+}
+@keyframes prev-3 
+{
+    0%
+    {
+        right: -600px; 
+    }
+    100%
+    {
+        right: -400px;
+    }
+    
+}
+

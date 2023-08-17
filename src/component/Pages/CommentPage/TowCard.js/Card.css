@@ -1,0 +1,62 @@
+/* Apply a flex container to the card row */
+.card-row {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line when needed */
+    justify-content: space-between; /* Adjust the spacing between cards */
+    max-width: 800px; /* Optional: Set a maximum width for the container */
+  }
+  .maincard {
+    flex-basis: calc(50% - 10px); /* Set the width of each card to 50% minus the space between cards */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+  .icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align icons vertically in the center */
+    padding: 8px;
+  }
+  .icon {
+    font-size: 20px;
+    color: #555;
+  }
+  .comment-section {
+    display: flex;
+    align-items: center; /* Align the comment icon and count vertically */
+  }
+  .comment-count {
+    margin-left: 5px; /* Add spacing between the comment icon and count */
+    font-size: 12px;
+    color: #555;
+  }
+  .mri {
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0 0 2px red;
+    padding: 0.5em 0.6em;
+  }
+
+  .cardwrapper{
+    background-color: white;
+    padding-top: 2px;
+
+  }
+  @media (min-width: 1281px) {
+    .cardwrapper {
+        background-color: white;
+        padding-top: 2px;
+        width: 1352px;
+        margin-left: 200px;}
+  }
+
+  

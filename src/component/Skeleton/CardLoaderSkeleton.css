@@ -1,0 +1,34 @@
+.card-loader-skeleton {
+    width: 100%; /* Set the width of the card skeleton */
+    border: 1px solid #e0e0e0; /* Adjust the border as needed */
+    border-radius: 4px; /* Adjust the border radius to match your design */
+    padding: 10px; /* Adjust the padding as needed */
+  }
+  
+  .skeleton-image {
+    width: 100%;
+    height: 347px; /* Set the height of the image skeleton */
+    background-color: #d0d0d0; /* Set the background color for the image skeleton */
+    border-radius: 4px; /* Adjust the border radius for the image skeleton */
+    margin-bottom: 10px; /* Adjust the margin between the image and content as needed */
+  
+  }
+  
+  .skeleton-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .skeleton-title {
+    width: 100%; /* Set the width of the title skeleton */
+    height: 42px; /* Set the height of the title skeleton */
+    background-color: #d0d0d0; /* Set the background color for the title skeleton */
+    margin-bottom: 5px; /* Adjust the margin between the title and description as needed */
+  }
+  
+  .skeleton-description {
+    width: 100%; /* Set the width of the description skeleton */
+    height: 15px; /* Set the height of the description skeleton */
+    background-color: #d0d0d0; /* Set the background color for the description skeleton */
+  }
+  
