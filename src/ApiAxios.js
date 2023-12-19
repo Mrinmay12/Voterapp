@@ -3,8 +3,8 @@
 import axios from 'axios';
 
 const apiUrl = axios.create({
-  baseURL: "https://voterserver.onrender.com", 
-  // baseURL: "http://localhost:9000", 
+  // baseURL: "https://dellife-server2-o.onrender.com", 
+  baseURL: process.env.REACT_APP_API_URL, 
    // Timeout for requests in milliseconds
   headers: {
     'Content-Type': 'application/json', // Set the default content type for requests
