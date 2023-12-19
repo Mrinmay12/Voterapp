@@ -165,21 +165,29 @@ export default function Card() {
     //     return item;
     //   }))
     // }
-
-    const handleLove2 = async (position) => {
-      const json = JSON.stringify({
-        user_id: login_id,
-        like_id: item,
-        image_position: position
-      })
-      try {
-        let response = await apiUrl.post('/api/userlikes/like', json)
-        if (response.status===200) { 
-          setRefress(new Date().getMilliseconds())
-        }
-      } catch (err) {
-        console.log(err)
+const[position,setposition]=useState(Number())
+const json = JSON.stringify({
+  user_id: login_id,
+  like_id: item,
+  image_position: position
+})
+useEffect(()=>{
+  const UpdateLike=async()=>{
+    try {
+      let response = await apiUrl.post('/api/userlikes/like', json)
+      if (response.status===200) { 
+        setRefress(new Date().getMilliseconds())
       }
+    } catch (err) {
+      console.log(err)
+    }
+  }
+  UpdateLike()
+},[position])
+    const handleLove2 = async (position) => {
+      setposition(position)
+      
+     
     }
     return (
       <div>
